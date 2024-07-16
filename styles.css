@@ -1,0 +1,172 @@
+:root {
+    --bg-color: rgba(241, 239, 233, 0.7);
+    --secondary-bg-color: #fff;
+    --btn-bg-color: rgba(204, 142, 30, 0.1);
+    --text-color: #2B3F5B;
+    --secondary-text-color: #CC8E1E;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+    font-family: "Inter", sans-serif, "Oranienbaum", serif;
+    font-weight: 400;
+}
+
+ul, 
+li {
+  list-style: none;  
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+  }
+
+
+.header {
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        padding: 16px 60px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 18px 80px;
+    }
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+ 
+    @media screen and (min-width: 768px) {
+        width: 60px;
+        height: 60px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 66px;
+        height: 66px;
+    }
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-item {
+    font-size: Inter;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--text-color);
+
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--btn-bg-color);
+    cursor: pointer;
+}
+
+.login-icon {
+    width: 15px;
+    height: 17px;
+    fill: var(--secondary-text-color);
+
+    &:hover,
+    &:focus {
+        fill: var(--secondary-bg-color);
+    }
+}
+
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: var(--btn-bg-color);
+    border: 0.5px solid var(--secondary-text-color);
+ 
+    color: var(--secondary-text-color);
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 1.5;
+
+    &:hover,
+    &:focus {
+        background-color: rgba(204, 142, 30, 0.2);
+        border: 1.5px solid var(--secondary-text-color);
+    }
+}
+
+.header-lang {
+    display: flex;
+    gap: 3px;
+}
+
+.theme-switcher {
+    display: flex;
+    gap: 5px;
+}
+
+.sun-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--secondary-text-color);
+    border: none;
+    cursor: pointer;
+}
+
+.moon-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
