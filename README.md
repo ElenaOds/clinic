@@ -1,1 +1,1 @@
-[Link to live page](elenaods.github.io/clinic/)
+[Link to live page](https://elenaods.github.io/clinic/)
